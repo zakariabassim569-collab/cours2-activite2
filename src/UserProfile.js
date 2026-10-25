@@ -13,12 +13,12 @@ function UserProfile(){
         frustrations:["Frustration 1","Frustration 2","Frustration 3"] 
     };
     return (
-        <div className="user-profil-card" style={{border:"1px solide #ccc",padding:"20px",borderRadius:"8px",maxWidth:"400px",margin:"20px auto"}}>
+        <div className="user-profil-card" style={{border:"1px solid #ccc",padding:"20px",borderRadius:"8px",maxWidth:"400px",margin:"20px auto"}}>
             <UserHeader nom={profil.nomComplet} age={profil.age} profession ={profil.profession}/>
             
             <UserList titre ="Objectifs" elements={profil.objectifs}/>
             <UserList titre ="Motivations" elements={profil.motivations}/>
-            <UserList titre ="Frustration" elements={profil.frustrations}/>
+            <UserList titre ="Frustrations" elements={profil.frustrations}/>
         </div>
     );
 }
